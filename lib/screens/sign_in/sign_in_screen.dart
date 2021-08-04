@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_firebase_authentication/components/no_account.dart';
 import 'package:flutter_firebase_authentication/components/social_cart.dart';
-import 'package:flutter_firebase_authentication/screens/forgot_password_screen.dart/forgot_password_screen.dart';
 import '../../size_config.dart';
 import 'components/sign_in_form.dart';
 
@@ -57,19 +56,7 @@ class SignInScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Don't have an account?  ",
-                        style: TextStyle(fontSize: 16),
-                      ),
-                      Text(
-                        "Sign Up",
-                        style: TextStyle(color: Colors.orange, fontSize: 16),
-                      )
-                    ],
-                  ),
+                  NoAccount(),
                 ],
               ),
             ),
